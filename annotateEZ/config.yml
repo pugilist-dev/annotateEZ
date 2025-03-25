@@ -1,0 +1,63 @@
+active_label: 1
+channels:
+- active: false
+  name: DAPI
+- active: false
+  name: TRITC
+- active: false
+  name: CY5
+- active: false
+  name: FITC
+data_key: features
+image_key: images
+labels:
+- active: false
+  color: black
+  name: D
+- active: true
+  color: red
+  name: CK
+- active: true
+  color: yellow
+  name: CD
+- active: true
+  color: green
+  name: V
+- active: true
+  color: blue
+  name: CK|CD|V
+- active: true
+  color: magenta
+  name: CK|CD
+- active: true
+  color: cyan
+  name: D|CK|CD|V
+- active: true
+  color: orange
+  name: CK|V
+- active: true
+  color: purple
+  name: D|CK|CD
+- active: true
+  color: brown
+  name: D|CK|V
+- active: true
+  color: pink
+  name: D|V
+- active: true
+  color: gray
+  name: D|CD|V
+- active: true
+  color: olive
+  name: D|CD
+- active: true
+  color: teal
+  name: D|CK
+- active: true
+  color: lime
+  name: CD|V
+mask_key: masks
+output_dir: ./data/output
+tile_size: 85
+x_size: 15
+y_size: 15
