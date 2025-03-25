@@ -13,8 +13,9 @@ images = []
 df = pd.DataFrame()
 
 # Constants:
-config_path = 'config.yml'
-log_path    = 'main.log'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+config_path = os.path.join(script_dir, 'config.yml')
+log_path    = os.path.join(script_dir, 'main.log')
 
 # Logger setup
 logger = logging.getLogger(__name__)
@@ -567,7 +568,7 @@ class MainWindow(QMainWindow):
 def load_config():
     global config
     if not os.path.exists(config_path):
-        sys.exit("config file does not exist!")
+        sys.exit("config file does not exist! at: " + config_path)
     else:
         with open(config_path, 'r') as stream:
             config = yaml.safe_load(stream)

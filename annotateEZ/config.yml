@@ -11,7 +11,7 @@ channels:
 data_key: features
 image_key: images
 labels:
-- active: false
+- active: true
   color: black
   name: D
 - active: true
@@ -57,7 +57,7 @@ labels:
   color: lime
   name: CD|V
 mask_key: masks
-output_dir: ./data/output
+output_dir: ''
 tile_size: 85
 x_size: 15
 y_size: 15

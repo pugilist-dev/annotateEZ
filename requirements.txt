@@ -3,3 +3,15 @@ pandas>=1.0.0
 numpy>=1.18.0
 h5py>=3.0.0
 PyYAML>=5.1.0
+torch
+torchvision
+tqdm
+scikit-learn
+scikit-image
+matplotlib
+loguru
+tifffile
+scipy
+opencv-python
+pytest
+pdocs
